@@ -1,16 +1,14 @@
 {
-  "homepage": "htts://rohithsunil999-ai.github.io/Rohith-Portfolio",
   "name": "rohith-portfolio",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
+  "homepage": "https://rohiths999.github.io/Rohith-Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-d build"
+    "deploy": "node ./scripts/publish-ghpages.js"
   },
   "dependencies": {
     "react": "^19.2.8",

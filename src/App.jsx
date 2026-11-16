@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router"
+import { BrowserRouter, Routes, Route, Link } from "react-router"
 import Home from "./Home"
 import Work from "./Work"
 import About from "./About"
@@ -7,16 +7,16 @@ import "./App.css"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Rohith-Portfolio">
       <header className="header">
-        <a href="/" className="logo">Rohith.</a>
+        <Link to="/" className="logo">Rohith.</Link>
 
         <nav>
-          <a href="/">Home</a>
-          <a href="/work">Work</a>
-          <a href="/about">About</a>
-          <a href="/visuals">Visuals</a>
-          </nav>
+          <Link to="/">Home</Link>
+          <Link to="/work">Work</Link>
+          <Link to="/about">About</Link>
+          <Link to="/visuals">Visuals</Link>
+        </nav>
       </header>
 
       <Routes>
@@ -28,9 +28,8 @@ function App() {
 
       <footer className="footer">
         <p>© 2026 Rohith Sunil</p>
-
         <div>
-          <a href="mailto:rohith.suni999@gmail.com">Email</a>
+          <a href="mailto:rohith.sunil999@gmail.com">Email</a>
           <a href="#">LinkedIn</a>
           <a href="#">Instagram</a>
         </div>
